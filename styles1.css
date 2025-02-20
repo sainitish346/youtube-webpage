@@ -1,0 +1,367 @@
+body{
+    margin:0;
+    padding-top: 80px;
+    padding-left:50px;
+    padding-right:40px;
+    background-color: black;
+}
+
+p {
+    font-family: Roboto, Arial;
+}
+
+.ad1{
+    width:800px;
+    height:300px;
+    margin-left:350px;
+    padding-top:8px;
+    margin-top:10px;
+    z-index: 100;
+    margin-top:15px;
+}
+
+.header {
+    position: fixed;
+    top: 0; /* Ensure the header is at the top */
+    left: 0; /* Align header to the left */
+    right: 0; /* Align header to the right */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    padding: 10px 20px;
+    width: 100%;
+    background-color: black;
+}
+
+.left-section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    height: 80px;
+    margin-left: 10px;
+    background-color: black;
+}
+
+.menu {
+    height: 45px;
+    margin-left: 15px;
+    z-index:100;
+}
+
+.middle-section {
+
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    width: 0px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Roboto, Arial;
+    padding-left: 12px;
+    border:1px solid rgb(192,192,192);
+    border-radius: 40px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+.search {
+    width: 45px;
+    height: 45px;
+    margin-left: 1px;
+}
+
+.search-button,.voice-button{
+    margin-left: 2px;
+    height: 50px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(192,192,192);
+    margin-right:10px;
+    position:relative;
+    display:flex;
+    align-items: center;;
+    justify-content: center;
+}
+
+.search-button .tool-tip,.voice-button .tool-tip,.menu1 .tool-tip{
+    position:absolute;
+    background-color: gray;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius:2px;
+    font-size:12px;
+    bottom:-30px;
+    opacity: 0;
+    transition: opacity 0.5;
+    pointer-events:none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tool-tip,.voice-button:hover .tool-tip,.menu1:hover .tool-tip{
+    opacity:1;
+}
+
+.search-button:hover,.voice-button:hover,.menu1:hover{
+    cursor:pointer;
+}
+
+.voice {
+    height: 45px;
+    background-color: none;
+}
+
+.right-section {
+
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.menu1 {
+    margin-right: 8px;
+    height: 45px;
+    position:relative;
+}
+
+.sign-in {
+    height: 45px;
+    border-radius: 22px;
+}
+
+.sidebar{
+    margin-bottom:8px;
+    position:fixed;
+    left:0;
+    top:8px;
+    bottom:0;
+    top:55px;
+    background-color: black;
+    width:100px;
+    vertical-align: center;
+   
+}
+.sidebar:hover{
+    cursor: pointer;
+}
+
+.home1{
+    margin-top:60px;
+    height:30px;
+    margin-bottom:10px;
+    margin-left:10px;
+    color:white;
+}
+
+.shorts1{
+    margin-top:30px;
+    height:40px;
+    color:white;
+    margin-left:10px;
+}
+
+.shorts{
+    width:35px;
+}
+
+.history1{
+    margin-top:50px;
+    height:30px;
+    margin-left:10px;
+    color:white;
+    width:30px;
+}
+
+.you1{
+    margin-top:40px;
+    height:30px;
+    margin-left:10px;
+    color:white;
+    width: 30px;
+}
+
+.subscriptions1{
+    margin-top:50px;
+    height:30px;
+    margin-left:10px;
+    z-index:100;
+    margin-bottom:3px;
+    color:white;
+    width:30px;
+}
+
+.trending1{
+    height: 40px;
+    margin-top:50px;
+    margin-left:10px;
+    color:white;
+}
+
+.t{
+    height:40px;
+}
+
+.shopping1{
+    height: 40px;
+    margin-top:40px;
+    margin-left:10px;
+    color:white;
+}
+
+.music1{
+    margin-top:40px;
+    margin-left:10px;
+    color:white;
+    width:30px;
+}
+
+.thumbnail {
+    width: 100%;
+    height:300px;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    vertical-align: bottom;
+    
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+}
+
+.thumbnail-row{
+    position:relative;
+    margin-bottom:5px;
+}
+
+.video-time{
+    background-color: black;
+    color:white;
+    position:absolute;
+    bottom:8px;
+    right:5px;
+    border-radius:2px;
+    padding:4px;
+}
+
+.profile-picture {
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 0px;;
+    height: 50px;
+    margin-left: 20px;
+    align-items: top;
+}
+
+.profile-picture-container{
+    position: relative;
+    display: flex;
+}
+
+.channel-tooltip{
+    background-color: white;
+    width:400px;
+    border:1px solid none;
+    padding:12px 12px;
+    z-index:300;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    position:absolute;
+    top:55px;
+    opacity:0;
+    pointer-events:none;
+    display:flex;
+    align-items:center;
+    transition:opacity 0.15s;
+}
+
+.profile-picture-container:hover .channel-tooltip{
+    opacity:1;
+}
+
+.channel-tooltip-picture{
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    margin-right:4px;
+}
+
+.channel-tooltip-name{
+    font-family: Roboto,Arial;
+    font-weight: bold;
+    font-size:16px;
+    margin-bottom:4px;
+    margin-left:2px;
+}
+
+.channel-tooltip-stats{
+    font-family: Roboto,Arial;
+    color:rgb(96,96,96);
+    font-size:14px;
+    margin-left: 8px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-left:45px;
+}
+
+@media (max-width: 752px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    display: inline-block;
+    
+}
+
+.video-info {
+    display: inline-block;
+    width: 200px;
+    
+}
+
+.video-title {
+    display: inline-block;
+    font-size: 16px;
+    font-family: arial;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    line-height: 20px;
+    color:azure;
+}
+
+.video-author,
+.video-stats {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color:whitesmoke;
+    size: 12px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
